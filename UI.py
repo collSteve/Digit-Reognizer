@@ -70,8 +70,6 @@ def predict_digit():
     text_box.insert(0, f"Number: {np.argmax(model.predict(topred))}")
     text_box.config(state='disabled')
 
-    print(digit)
-
 
 # Create a button with an onclick event
 button = tk.Button(root, text="Click Me", command=predict_digit)
